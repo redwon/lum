@@ -1,0 +1,24 @@
+$button-background: #fc6453;
+$button-text-color: #fff;
+
+.button {
+  cursor: pointer;
+  padding: 12px 15px;
+  background-color: $button-background;
+  color: $button-text-color;
+  border: 0 none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: darken($button-background, 5);
+  }
+}

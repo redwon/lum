@@ -1,0 +1,17 @@
+$title-icon-color: #1e2142;
+
+.title-icon {
+  color: $title-icon-color;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
