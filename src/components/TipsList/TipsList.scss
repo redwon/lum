@@ -1,0 +1,46 @@
+$tips-title-color: #1e2142;
+
+.tips-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &__item {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    padding-left: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.03em;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0px;
+      top: 2px;
+      border: 1px solid #fc6453;
+      border-radius: 50%;
+    }
+  }
+
+  &__item-title {
+    color: $tips-title-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
