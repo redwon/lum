@@ -103,6 +103,11 @@ $article-category-color: #fc6453;
 
   &__cover-img {
     width: 100%;
+
+    @media (max-width: 768px) {
+      height: 350px;
+      object-fit: cover;
+    }
   }
 
   &__content {
